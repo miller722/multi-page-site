@@ -1,8 +1,105 @@
 doctype html
 html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=edge")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Document
-    body 
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="stylesheet", href="../style.css")
+		link(
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		)
+	body
+		header.header
+			nav.navbar.navbar-expand-lg.header-bg
+				.container 
+						a.navbar-brand(href="#")
+							img(src="./img/header/LOGO.png", alt="logo")
+						button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation")
+							span.navbar-toggler-icon
+						.collapse.navbar-collapse(id="navbarNav")
+							ul.navbar-nav
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(aria-current="page" href="#") HOME
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(href="#") PROPERTIES
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(href="#") AGENCIES
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(href="#") ABOUT
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(href="#") NEWS
+								li.nav-item 
+									a.nav-link.btn.btn-outline-success(href="#") CONTACT US			
+							.auth 
+								.auth__icon 
+									img(src="./img/header/icon-login.png", alt="icon")
+								.auth__login 
+									a(href="http://")  LOGIN 
+								.auth__register 
+									a(href="http://")  REGISTER
+		main 
+			section.section
+		footer.footer
+			.container 
+				.footer__wrapper
+					.footer-info
+						h2.footer-info__title Real Estate 
+						.footer-info__description
+							p.footer-info__description-text.
+								Nam a dui erat. Sed bibendum augue et porta 
+								consequat. Morbi id mattis sem. Phasellus quis 
+								magna ipsum. Donec malesuada nisi felis, vel 
+								vestibulum nisl volutpat faucibus.																
+						ul.footer-network 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-facebook.png", alt="facebook") 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-twitter.png", alt="twitter") 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-google-plus.png", alt="google-plus") 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-twitter.png", alt="behance") 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-pinterest.png", alt="pinterest") 
+							li  
+								a.footer-network__link(href="")
+									img(src="./img/header/footer/icon-instagram.png", alt="instagram") 							
+					.footer-menu 
+						.footer-item
+							h4.footer-item__title Quick Links 
+							ul.footer-list 
+								li 
+									a.footer-list__link(href="") Home	
+								li 
+									a.footer-list__link(href="") Agencias	
+								li 
+									a.footer-list__link(href="") Properties	
+						.footer-item.footer-item--news
+							h4.footer-item__title.none Quick Links 
+							ul.footer-list 
+								li 
+									a.footer-list__link(href="") News	
+								li 
+									a.footer-list__link(href="") Contacts us	
+						.footer-item
+							h4.footer-item__title Contacts us 
+							ul.footer-list 
+								li 
+									a.footer-list__link(href="tel:+44 987 065 908")  +44 987 065 908
+								li 
+									a.footer-list__link(href="tel:+44 987 062 909") +44 987 062 909
+			.footer-copyright 
+				p © 2018 . All rights reserved.																		
+		script(
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			crossorigin="anonymous"
+		)

@@ -1,0 +1,19 @@
+// @import './variables';
+@import './helper';
+@import './global';
+
+// // hamburgers
+// @import './hamburgers/hamburgers.scss';
+
+
+
+
+// Components
+@import './components/header';
+@import './components/auth';
+@import './components/footer';
+
+.section {
+    height: 600px;
+    background-color: grey;
+}
