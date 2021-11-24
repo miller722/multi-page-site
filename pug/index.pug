@@ -41,7 +41,37 @@ html(lang="en")
 								.auth__register 
 									a(href="http://")  REGISTER
 		main 
-			section.section
+			section.section-home 
+				.container 
+					.swiper.home-swiper.JS-home-swiper 
+					.swiper-wrapper 
+						.swiper-slide.home-swiper-slide
+							.home 
+								.home-blurb
+									.home-blurb__sale 
+										span SALE 
+									.home-blurb__title 
+										h1.home-blurb__title-text 372 Central Park W #17N,  New York
+									.home-blurb__description 
+										p.home-blurb__description-text.
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean 
+											necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora 
+											torquent per conubia nostra, per inceptos himenaeos.
+									.btn
+										a.btn.btn-success(href="") VIEW DETAILS
+								.home-card 	
+									.home-card__img 
+										img(src="", alt="")
+									.home-card__body 
+										h5.home-card__title Central Park, Manhattan, NY 
+										span.home-card__subtitle $5,630,000
+										p.home-card__description Nullam vestibulum leo et ante facilisis, vel feugiat mauris accumsan.
+										.home-card__icon 
+											img(src="./img/header/home/home-card-icon-1.png", alt="")
+											span.home-card__icon--ml 2bd
+											img(src="./img/header/home/home-card-icon-2.png", alt="")
+											span.home-card__icon--ml 1ba
+											span 756 sqft							
 		footer.footer
 			.container 
 				.footer__wrapper
@@ -93,15 +123,18 @@ html(lang="en")
 							h4.footer-item__title Contacts us 
 							ul.footer-list 
 								li 
-									a.footer-list__link--mail(href="mailto:hello@realestate.com") hello@realestate.com
-								li 
+									a.footer-list__link.footer-list__link--mail(href="mailto:hello@realestate.com") hello@realestate.com
+								li
 									a.footer-list__link(href="tel:+44 987 065 908")  +44 987 065 908
 								li 
 									a.footer-list__link(href="tel:+44 987 062 909") +44 987 062 909
 			.footer-copyright 
 				p © 2018 . All rights reserved.																		
+		script(src="https://code.jquery.com/jquery-3.6.0.min.js") 
 		script(
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 			crossorigin="anonymous"
 		)
+		script(src="https://unpkg.com/swiper@7/swiper-bundle.min.js") 
+		script(src="./js/main.js") 

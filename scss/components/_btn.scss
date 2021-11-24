@@ -1,0 +1,9 @@
+.btn {
+    margin-left: 0;
+    &-success {
+        background-color: #00bd74 !important;
+        &:hover {
+            background-color: #03774a !important;
+        }
+    }
+}

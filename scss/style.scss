@@ -11,9 +11,7 @@
 // Components
 @import './components/header';
 @import './components/auth';
+@import './components/btn';
+@import './components/section';
+@import './components/home';
 @import './components/footer';
-
-.section {
-    height: 600px;
-    background-color: grey;
-}

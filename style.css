@@ -54,6 +54,7 @@ ul {
 }
 .header .nav-link:hover {
   color: white;
+  background-color: #00bd74 !important;
 }
 
 .auth {
@@ -82,6 +83,153 @@ ul {
 }
 .auth__register a:hover {
   color: green;
+}
+
+.btn {
+  margin-left: 0;
+}
+.btn-success {
+  background-color: #00bd74 !important;
+}
+.btn-success:hover {
+  background-color: #03774a !important;
+}
+
+.section-home {
+  background-color: #555555;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 25% 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25%;
+}
+@media (max-width: 1024px) {
+  .home {
+    gap: 20%;
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    gap: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 425px) {
+  .home-blurb {
+    text-align: center;
+  }
+}
+.home-blurb__sale {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  background-color: #ffa656;
+  width: 54px;
+  height: 24px;
+  border-radius: 3px;
+  margin-bottom: 25px;
+}
+@media (max-width: 425px) {
+  .home-blurb__sale {
+    margin-bottom: 15px;
+  }
+}
+.home-blurb__title {
+  margin-bottom: 40px;
+}
+@media (max-width: 425px) {
+  .home-blurb__title {
+    margin-bottom: 15px;
+  }
+}
+.home-blurb__title-text {
+  color: white;
+  font-size: 42px;
+  margin: 0;
+}
+.home-blurb__description {
+  margin-bottom: 40px;
+}
+@media (max-width: 425px) {
+  .home-blurb__description {
+    margin-bottom: 15px;
+  }
+}
+.home-blurb__description-text {
+  color: white;
+}
+.home-card {
+  width: 364px;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.home-card__img {
+  width: 364px;
+  height: 222px;
+  background-color: #b9b9b9;
+  border-radius: 5px 5px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.home-card__body {
+  padding: 25px;
+}
+.home-card__title {
+  font-size: 18px;
+  margin: 0;
+}
+.home-card__subtitle {
+  font-size: 18px;
+  color: #00bd74;
+  margin-bottom: 20px;
+}
+.home-card__description {
+  color: #6b6b6b;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.home-card__icon--ml {
+  margin-right: 25px;
+  margin-left: 5px;
 }
 
 .footer {
@@ -118,6 +266,13 @@ ul {
           column-gap: 20px;
   padding: 100px 0 100px 0;
   position: relative;
+}
+@media (max-width: 768px) {
+  .footer__wrapper {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    padding: 25px 10px;
+  }
 }
 @media (max-width: 425px) {
   .footer__wrapper {
@@ -178,11 +333,20 @@ ul {
   text-align: center;
   padding-left: 30%;
 }
+@media (max-width: 768px) {
+  .footer-menu {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding-left: 0;
+  }
+}
 @media (max-width: 425px) {
   .footer-menu {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     margin: 0;
+    padding-left: 0;
   }
 }
 .footer-item {
@@ -205,6 +369,7 @@ ul {
 }
 .footer-list {
   padding: 0;
+  margin: 0;
 }
 .footer-list__link {
   display: inline-block;
@@ -212,7 +377,7 @@ ul {
   font-size: 16px;
   color: #c5c5c5;
   text-decoration: none;
-  margin: 3% 0;
+  margin-bottom: 10px;
 }
 .footer-list__link--mail {
   text-decoration: none;
@@ -227,9 +392,4 @@ ul {
   color: #1e314b;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.section {
-  height: 600px;
-  background-color: grey;
 }
