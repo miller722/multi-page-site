@@ -1,19 +1,36 @@
 .home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25%;
+    gap: 20%;
 		 @media (max-width: 1024px) {
-			gap: 20%;
-		 }
-		 @media (max-width: 768px) {
-			gap: 5%;
-		 }
-		 @media (max-width: 425px) {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: center;
+			text-align: center;
 		 }
+		 &-swiper {
+			& .swiper-button-prev {
+				color: white !important;
+			}
+			& .swiper-button-next {
+				color: white !important;
+			}
+			& .swiper-pagination-bullet {
+				background: white !important;
+			}
+			&-slide {
+				padding-left: 110px;
+				padding-right: 10px;
+				@media (max-width: 1024x) {
+					padding-left: 0;
+					padding-right: 0;
+				 }
+			}
+		}
+		&-pag {
+			padding-top: 40px;
+		}
     &-blurb {
 			@media (max-width: 425px) {
 				text-align: center;
@@ -28,8 +45,8 @@
 					height: 24px;
 					border-radius: 3px;
 					margin-bottom: 25px;
-					@media (max-width: 425px) {
-						margin-bottom: 15px;
+					@media (max-width: 1024px) {
+						display: none;
 					 }
         } 
         &__title {

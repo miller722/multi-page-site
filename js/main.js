@@ -1,6 +1,10 @@
+function Init(){
+  homeSlider();
+}
+Init();
  // Slider
- function testimonialsSlider(){
-    new Swiper('.JS-testimonials-swiper', {
+ function homeSlider(){
+    new Swiper('.JS-home-swiper', {
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
