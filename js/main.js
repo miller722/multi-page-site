@@ -2,6 +2,9 @@ function Init(){
   homeSlider();
 }
 Init();
+
+
+
  // Slider
  function homeSlider(){
     new Swiper('.JS-home-swiper', {
@@ -27,3 +30,7 @@ Init();
       loop: true,
     });
   }
+
+  $(window).scroll(function () {
+    $("header").toggleClass("scroll", $(this).scrollTop() > 100);
+  });

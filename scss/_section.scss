@@ -1,0 +1,52 @@
+.section {
+    &-heading {
+      &--center {
+        text-align: center;
+        & .section-heading__title:after {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+      &__title {
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 36px;
+        color: #000000;
+        @media (max-width: 425px) {
+          font-size: 24px;
+         }
+        &_color {
+          position: relative;
+          padding-bottom: 20px;
+          margin-bottom: 30px;
+          font-weight: bold;
+          font-size: 36px;
+          color: $white;
+        }
+      }
+    }
+    &-body {
+      margin-bottom: 37px;
+      &__description {
+        font-weight: 300;
+        font-size: 18px;
+        color: #7d7987;
+        @media (max-width: 425px) {
+          font-size: 16px;
+         }
+        &-center {
+          font-weight: 300;
+          font-size: 18px;
+          line-height: 30px;
+          text-align: center;
+          color: #7d7987;
+          @media (max-width: 425px) {
+            font-size: 16px;
+           }
+        }
+      }
+    }
+  }
+  
