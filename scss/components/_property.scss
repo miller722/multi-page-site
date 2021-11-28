@@ -7,7 +7,8 @@
         border-radius: 5px;
     }
     &-form {
-        width: 420px;
+        position: relative;
+        width: 360px;
         height: 690px;
         margin-left: 30px;
         padding: 25px;
@@ -18,11 +19,28 @@
             flex-direction: column;
             text-align: left;
             margin-bottom: 20px;
+            &--color {
+                color: #4e4e4e;
+            }
             &--label {
                 font-size: 18px;
                 font-weight: 500;
                 margin-bottom: 10px;
             }
+            // &--option {
+                
+            // }
+        }
+        &__range {
+           margin-bottom: 40px;
+        }
+        &__line {
+            position: absolute;
+            left: 0;
+            top: 600px;
+            width: 360px;
+            height: 1px;
+            background-color: #e7e7e7;
         }
     }
 }

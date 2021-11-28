@@ -1,7 +1,19 @@
 .btn {
+    &--normal {
+        width: 165px;
+        height: 50px; 
+    }
+    &--biggest {
+        width: 310px;
+        height: 50px;
+    }
     &-success {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
         background-color: #00bd74 !important;
         border: none !important;
+
         &:hover {
             background-color: #03774a !important;
         }

@@ -98,7 +98,24 @@ select {
   color: green;
 }
 
+.btn--normal {
+  width: 165px;
+  height: 50px;
+}
+.btn--biggest {
+  width: 310px;
+  height: 50px;
+}
 .btn-success {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #00bd74 !important;
   border: none !important;
 }
@@ -304,7 +321,8 @@ select {
   border-radius: 5px;
 }
 .property-form {
-  width: 420px;
+  position: relative;
+  width: 360px;
   height: 690px;
   margin-left: 30px;
   padding: 25px;
@@ -322,10 +340,24 @@ select {
   text-align: left;
   margin-bottom: 20px;
 }
+.property-form__select--color {
+  color: #4e4e4e;
+}
 .property-form__select--label {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+.property-form__range {
+  margin-bottom: 40px;
+}
+.property-form__line {
+  position: absolute;
+  left: 0;
+  top: 600px;
+  width: 360px;
+  height: 1px;
+  background-color: #e7e7e7;
 }
 
 .footer {

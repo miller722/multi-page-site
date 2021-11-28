@@ -59,7 +59,7 @@ html(lang="en")
 												necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora 
 												torquent per conubia nostra, per inceptos himenaeos.
 										.btn
-											a.btn.btn-success(href="") VIEW DETAILS
+											a.btn.btn-success.btn--normal(href="") VIEW DETAILS
 									.home-card 	
 										.home-card__img 
 											img(src="", alt="")
@@ -86,7 +86,7 @@ html(lang="en")
 												necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora 
 												torquent per conubia nostra, per inceptos himenaeos.
 										.btn
-											a.btn.btn-success(href="") VIEW DETAILS
+											a.btn.btn-success.btn--normal(href="") VIEW DETAILS
 									.home-card 	
 										.home-card__img 
 											img(src="https://image.newyorkcity.ru/wp-content/uploads/2012/06/Neighbourhood-Midtown-Manhattan.jpg", alt="")
@@ -113,7 +113,7 @@ html(lang="en")
 												necarcu eget nulla bibendum finibus. Class aptent taciti sociosqu ad litora 
 												torquent per conubia nostra, per inceptos himenaeos.
 										.btn
-											a.btn.btn-success(href="") VIEW DETAILS
+											a.btn.btn-success.btn--normal(href="") VIEW DETAILS
 									.home-card 	
 										.home-card__img 
 											img(src="https://afisha.nyc/wp-content/uploads/2017/09/Bez-nazvaniya.jpg", alt="")
@@ -143,25 +143,30 @@ html(lang="en")
 							.property-form 
 								.property-form__select 
 									label.property-form__select--label(for="") City
-									select
+									select.property-form__select--color
+										option.property-form__select--option(value="") New York
 								.property-form__select 
 									label.property-form__select--label(for="")  Property Type
-									select
+									select.property-form__select--color
+										option.property-form__select--option(value="") Any Tipe
 								.property-form__select 
 									label.property-form__select--label(for="") Purpose
-									select
+									select.property-form__select--color
+										option.property-form__select--option(value="") Any Purpose
 								.property-form__select 
 									label.property-form__select--label(for="") Badrooms
-									select
+									select.property-form__select--color
+										option.property-form__select--option(value="") +1
 								.property-form__select 
 									label.property-form__select--label(for="") Bathrooms
-									select
+									select.property-form__select--color
+										option(.property-form__select--optionvalue="") +1
 								.property-form__range 
 									label.form-label.property-form__select.property-form__select--label(for="customRange3") Price
 									input.form-range(type="range" min="0" max="5" step="0.5" id="customRange3")
-								hr
-								.btn
-									a.btn.btn-success(href="") SEARCH PROPERTIES
+								.property-form__line
+								.btn 
+									a.btn.btn-success.btn--biggest(href="") SEARCH PROPERTIES
 
 		footer.footer
 			.container 
