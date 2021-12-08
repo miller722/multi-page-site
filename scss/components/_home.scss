@@ -1,7 +1,4 @@
 .home {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20%;
 		 @media (max-width: 1024px) {
 			display: flex;
 			flex-direction: column;
@@ -70,45 +67,5 @@
             }
         }
     }
-    &-card {
-        width: 364px;
-        height: 420px;
-        background-color: #fff;
-        border-radius: 5px;
-				&__img {
-					width: 364px;
-					height: 222px;
-					background-color: #b9b9b9;
-					border-radius: 5px 5px 0 0;
-					object-fit: cover;
-					overflow: hidden;
-					display: flex;
-					justify-content: center;
-					align-items: center;
-				}
-				&__body {
-					padding: 25px;
-				}
-				&__title {
-					font-size: 18px;
-					margin: 0;
-				}
-				&__subtitle {
-					font-size: 18px;
-					color: #00bd74;
-					margin-bottom: 20px;
-				}
-				&__description {
-					color: #6b6b6b;
-					font-size: 16px;
-					margin-bottom: 25px;
-					
-				}
-				&__icon {
-					&--ml {
-						margin-right: 25px;
-						margin-left: 5px;
-					}
-				}
-    }
+
 }
