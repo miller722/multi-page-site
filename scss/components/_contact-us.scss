@@ -1,0 +1,17 @@
+.contact {
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-text {
+        font-size: 26px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+        line-height: 1.385;      
+        max-width: 500px;   
+        margin: 0;
+    }
+}

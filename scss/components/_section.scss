@@ -8,24 +8,50 @@
 			padding: 100px 0;
 		}
 		&-heading {
+			&--center {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
 			&__title {
 				font-size: 34px;
-				font-weight: 700;
+				font-family: "Montserrat";
+				color: rgb(23, 23, 23);
+				line-height: 1.2;
 				margin-bottom: 30px;
+				font-weight: 700;
 				&--center {
 					text-align: center;
 				}
 			}
 			&__description {
 				font-size: 18px;
-				margin-bottom: 60px;
-				color: #4e4e4e;
+				font-family: "NunitoSans";
+				color: rgb(78, 78, 78);
+				line-height: 1.444;
+				margin-bottom: 30px;
 				&--center {
 					text-align: center;
+					margin-right: auto;
+					margin-left: auto;
 				}
 			}
 		}
-	&-card-home {
+	&-card {
 		background-color: #f7f7f7;
+	}
+	&-agencies {
+	}
+	&-contact {
+		background-color: #00bd74;
+		padding: 50px 0;
+	}
+	&-aboutUs {
+	}
+	&-comment {
+		background-color: #212121;
+	}
+	&--padding {
+		padding: 100px 0;
 	}
 }

@@ -13,7 +13,6 @@ Init();
         clickable: true,
         el: ".swiper-pagination",
         type: "bullets",
-        dynamicBullets: true,
       },
       navigation: {
         nextEl: '.swiper-button-next',

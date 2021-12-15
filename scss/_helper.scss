@@ -6,3 +6,25 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: 2s;
   }
+
+  .pb-sm {
+    padding-bottom: 30px;
+  }
+
+  .my-color-primary {
+    color: #33ca90;
+  }
+
+  .my-bgc-primary {
+      background-color: #00bd74;
+  }
+
+  .flex-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .m-center {
+    margin: 0 auto;
+  }

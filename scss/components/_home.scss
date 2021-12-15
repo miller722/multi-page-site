@@ -17,8 +17,6 @@
 				background: white !important;
 			}
 			&-slide {
-				padding-left: 110px;
-				padding-right: 10px;
 				@media (max-width: 1024x) {
 					padding-left: 0;
 					padding-right: 0;
@@ -29,6 +27,7 @@
 			padding-top: 40px;
 		}
     &-blurb {
+
 			@media (max-width: 425px) {
 				text-align: center;
 			 }
@@ -52,9 +51,10 @@
 							margin-bottom: 15px;
 						 }
             &-text {
-							color: rgb(255, 255, 255);
+				color: rgb(255, 255, 255);
                 font-size: 42px;
-                margin: 0;						
+                margin: 0;	
+				max-width: 550px;					
             }
         }      
         &__description {
@@ -64,6 +64,7 @@
 						 }
             &-text {
                 color: white;
+				max-width: 600px;
             }
         }
     }
