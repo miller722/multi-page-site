@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+		include ../includes/head.pug
+		body 
+			//- header
+			include ../components/header.pug
+			//- main
+			main 
+				section.section--grey.section--padding 
+					.container
+						.d-flex.justify-content-center
+							h3.section-heading__title Latest News
+						.card-wrapper 
+							include ../components/card.pug
+							+cardCompressed
+							+cardCompressed
+							+cardCompressed
+							+cardCompressed
+							+cardCompressed
+							+cardCompressed
+						.d-flex.justify-content-center
+							include ../components/btn-normal.pug
+				section.section-contact.my-bgc-primary
+					.container
+						include ../components/contact-us.pug
+			//- footer
+			include ../components/footer.pug
+		include ../includes/foot.pug

@@ -37,21 +37,18 @@
 				}
 			}
 		}
-	&-card {
-		background-color: #f7f7f7;
-	}
-	&-agencies {
-	}
 	&-contact {
-		background-color: #00bd74;
 		padding: 50px 0;
 	}
-	&-aboutUs {
-	}
-	&-comment {
-		background-color: #212121;
-	}
+
 	&--padding {
 		padding: 100px 0;
+	}
+
+	&--grey {
+		background-color: #f7f7f7;
+	}
+	&--dark {
+		background-color: #212121;
 	}
 }

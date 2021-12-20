@@ -1,0 +1,20 @@
+.contact-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-text {
+  font-size: 26px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: white;
+  line-height: 1.385;
+  max-width: 500px;
+  margin: 0;
+}
